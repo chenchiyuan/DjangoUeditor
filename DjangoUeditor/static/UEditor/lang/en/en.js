@@ -8,12 +8,12 @@
 UE.I18N['en'] = {
     'labelMap':{
         'anchor':'Anchor', 'undo':'Undo', 'redo':'Redo', 'bold':'Bold', 'indent':'Indent', 'snapscreen':'SnapScreen',
-        'italic':'Italic', 'underline':'Underline', 'strikethrough':'Strikethrough', 'subscript':'SubScript',
+        'italic':'Italic', 'underline':'Underline', 'strikethrough':'Strikethrough', 'subscript':'SubScript','fontborder':'text border',
         'superscript':'SuperScript', 'formatmatch':'Format Match', 'source':'Source', 'blockquote':'BlockQuote',
         'pasteplain':'PastePlain', 'selectall':'SelectAll', 'print':'Print', 'preview':'Preview',
         'horizontal':'Horizontal', 'removeformat':'RemoveFormat', 'time':'Time', 'date':'Date',
         'unlink':'Unlink', 'insertrow':'InsertRow', 'insertcol':'InsertCol', 'mergeright':'MergeRight', 'mergedown':'MergeDown',
-        'deleterow':'DeleteRow', 'deletecol':'DeleteCol', 'splittorows':'SplitToRows',
+        'deleterow':'DeleteRow', 'deletecol':'DeleteCol', 'splittorows':'SplitToRows','insertcode':'insert code',
         'splittocols':'SplitToCols', 'splittocells':'SplitToCells','deletecaption':'DeleteCaption','inserttitle':'InsertTitle',
         'mergecells':'MergeCells', 'deletetable':'DeleteTable', 'cleardoc':'Clear', 'insertparagraphbeforetable':"InsertParagraphBeforeTable",
         'fontfamily':'FontFamily', 'fontsize':'FontSize', 'paragraph':'Paragraph', 'insertimage':'Image','edittable':'Edit Table', edittd:'Edit Td','link':'Link',
@@ -25,7 +25,7 @@ UE.I18N['en'] = {
         'imageleft':'ImageLeft', 'imageright':'ImageRight', 'attachment':'Attachment', 'imagecenter':'ImageCenter', 'wordimage':'WordImage',
         'lineheight':'LineHeight','edittip':'EditTip','customstyle':'CustomStyle', 'scrawl':'Scrawl', 'autotypeset':'AutoTypeset',
         'webapp':'WebAPP', 'touppercase':'UpperCase', 'tolowercase':'LowerCase','template':'Template','background':'Background',inserttable:'InsertTable',
-        'music':'Music'
+        'music':'Music', 'charts': 'charts','drafts': 'Load from Drafts'
     },
     'insertorderedlist':{
         'num':'1,2,3...',
@@ -81,6 +81,32 @@ UE.I18N['en'] = {
         'callBackErrorMsg':"The callback data is wrong,please check the config!",
         'uploadErrorMsg':"Upload error,please check your server environment! "
     },
+    'insertcode':{
+        'as3':'ActionScript3',
+        'bash':'Bash/Shell',
+        'cpp':'C/C++',
+        'css':'Css',
+        'cf':'CodeFunction',
+        'c#':'C#',
+        'delphi':'Delphi',
+        'diff':'Diff',
+        'erlang':'Erlang',
+        'groovy':'Groovy',
+        'html':'Html',
+        'java':'Java',
+        'jfx':'JavaFx',
+        'js':'Javascript',
+        'pl':'Perl',
+        'php':'Php',
+        'plain':'Plain Text',
+        'ps':'PowerShell',
+        'python':'Python',
+        'ruby':'Ruby',
+        'scala':'Scala',
+        'sql':'Sql',
+        'vb':'Vb',
+        'xml':'Xml'
+    },
     'confirmClear':"Do you confirm to clear the Document?",
     'contextMenu':{
         'delete':"Delete",
@@ -98,6 +124,7 @@ UE.I18N['en'] = {
         'tableright':'Right float',
         'aligntd':'Cell alignment',
         'edittd':"Cell property",
+        'setbordervisible':'set table edge visible',
         'table':"Table",
         'justifyleft':'Justify Left',
         'justifyright':'Justify Right',
@@ -111,6 +138,8 @@ UE.I18N['en'] = {
         'deletecaption':'Delete Caption',
         'inserttitle':'Insert Title',
         'deletetitle':'Delete Title',
+        'inserttitlecol':'Insert Title Col',
+        'deletetitlecol':'Delete Title Col',
         'averageDiseRow':'AverageDise Row',
         'averageDisCol':'AverageDis Col',
         'deleterow':"Delete row",
@@ -126,11 +155,26 @@ UE.I18N['en'] = {
         'splittocells':"Split to cells",
         'splittocols':"Split to Cols",
         'splittorows':"Split to Rows",
+        'tablesort':'Table sorting',
+        'enablesort':'Sorting Enable',
+        'disablesort':'Sorting Disable',
+        'reversecurrent':'Reverse current',
+        'orderbyasc':'Order By ASCII',
+        'reversebyasc':'Reverse By ASCII',
+        'orderbynum':'Order By Num',
+        'reversebynum':'Reverse By Num',
+        'borderbk':'Border shading',
+        'setcolor':'interlaced color',
+        'unsetcolor':'Cancel interlacedcolor',
+        'setbackground':'Background interlaced',
+        'unsetbackground':'Cancel Bk interlaced',
+        'redandblue':'Blue and red',
+        'threecolorgradient':'Three-color gradient',
         'copy':"Copy(Ctrl + c)",
         'copymsg':"Please use 'Ctrl + c' instead!",
         'paste':"Paste(Ctrl + v)",
         'pastemsg':"Please use 'Ctrl + v' instead!",
-        'highlightcode':'insert code'
+        'highlightcode':'Insert code'
     },
 
     'anthorMsg':"Link",
@@ -175,7 +219,8 @@ UE.I18N['en'] = {
             'lang_background_normal':'Normal',
             'lang_background_local':'Local',
             'lang_background_set':'Background Set',
-            'lang_background_none':'None',
+            'lang_background_none':'No Background',
+            'lang_background_colored':'Colored Background',
             'lang_background_color':'Color Set',
             'lang_background_netimg':'Net-Image',
             'lang_background_align':'Align Type',
@@ -207,7 +252,8 @@ UE.I18N['en'] = {
             'imgSearchReset':{value:"Clear"},
             'upload':{style:'background: url(upload.png);'},
             'duiqi':{style:'background: url(imglabel.png) -12px 2px no-repeat;'},
-            'lang_savePath':'Select savePath:'
+            'lang_savePath':'Select savePath:',
+            'lang_load_savePath': 'Loading...'
         },
         'netError':"Network error,please check the config!",
         'noUploadImage':"No pictures has been uploaded！",
@@ -245,7 +291,7 @@ UE.I18N['en'] = {
     },
     webapp:{
         tip1:"This function provided by Baidu APP,please apply for baidu APPKey webmaster first!",
-        tip2:"And then open the file editor_config.js to set it! ",
+        tip2:"And then open the file ueditor.config.js to set it! ",
         applyFor:"APPLY FOR",
         anthorApi:"Baidu API"
     },
@@ -291,6 +337,29 @@ UE.I18N['en'] = {
     anchor:{
         'static':{
             'lang_input_anchorName':'Anchor Name:'
+        }
+    },
+    'charts':{
+        'static':{
+            'lang_data_source':'Data source:',
+            'lang_chart_format': 'Chart format:',
+            'lang_data_align': 'Align',
+            'lang_chart_align_same': 'Consistent with the X-axis Y-axis',
+            'lang_chart_align_reverse': 'X-axis Y-axis opposite',
+            'lang_chart_title': 'Title',
+            'lang_chart_main_title': 'main title:',
+            'lang_chart_sub_title': 'sub title:',
+            'lang_chart_x_title': 'X-axis title:',
+            'lang_chart_y_title': 'Y-axis title:',
+            'lang_chart_tip': 'Prompt',
+            'lang_cahrt_tip_prefix': 'prefix:',
+            'lang_cahrt_tip_description': '仅饼图有效， 当鼠标移动到饼图中相应的块上时，提示框内的文字的前缀',
+            'lang_chart_data_unit': 'Unit',
+            'lang_chart_data_unit_title': 'unit:',
+            'lang_chart_data_unit_description': '显示在每个数据点上的数据的单位， 比如： 温度的单位 ℃',
+            'lang_chart_type': 'Chart type:',
+            'lang_prev_btn': 'Previous',
+            'lang_next_btn': 'Next'
         }
     },
     attachment:{
@@ -354,7 +423,7 @@ UE.I18N['en'] = {
         'static':{
             'lang_input_about':'About',
             'lang_input_shortcuts':'Shortcuts',
-            'lang_input_version':'Version:1.2.5',
+            'lang_input_version':'Version:1.3.5',
             'lang_input_introduction':"UEditor is developed by Baidu Co.ltd.  It is lightweight, customizable , focusing on user experience and etc. , UEditor is based on open source BSD license , allowing free use and redistribution.",
             'lang_Txt_shortcuts':'Shortcuts',
             'lang_Txt_func':'Function',
@@ -398,7 +467,8 @@ UE.I18N['en'] = {
             lang_city:"City",
             lang_address:"Address",
             city:{value:"Beijing"},
-            lang_search:"Search"
+            lang_search:"Search",
+            lang_dynamicmap:"Dynamic map"
         },
         cityMsg:"Please enter the city name!",
         errorMsg:"Can't find the place!"
@@ -410,6 +480,8 @@ UE.I18N['en'] = {
             lang_search1:"Search",
             lang_search2:"Search",
             lang_replace:"Replace",
+            lang_searchReg:'Support regular expression ,which starts and ends with a slash ,for example "/expression/"',
+            lang_searchReg1:'Support regular expression ,which starts and ends with a slash ,for example "/expression/"',
             lang_case_sensitive1:"Case sense",
             lang_case_sensitive2:"Case sense",
             nextFindBtn:{value:"Next"},
@@ -434,7 +506,7 @@ UE.I18N['en'] = {
     insertvideo:{
         'static':{
             lang_tab_insertV:"Video",
-            lang_tab_searchV:"Search",
+//            lang_tab_searchV:"Search",
             lang_video_url:" URL ",
             lang_video_size:"Video Size",
             lang_videoW:"Width",
@@ -465,6 +537,7 @@ UE.I18N['en'] = {
         xlzm:"The Greek",
         ewzm:"Russian",
         pyzm:"Phonetic",
+        yyyb:"English",
         zyzf:"Others"
     },
     'edittable':{
@@ -472,8 +545,10 @@ UE.I18N['en'] = {
             'lang_tableStyle':'Table style',
             'lang_insertCaption':'Add table header row',
             'lang_insertTitle':'Add table title row',
+            'lang_insertTitleCol':'Add table title col',
             'lang_tableSize':'Automatically adjust table size',
-                'lang_autoSizeContent':'Adaptive by form text',
+            'lang_autoSizeContent':'Adaptive by form text',
+            'lang_orderbycontent':"Table of contents sortable",
             'lang_autoSizePage':'Page width adaptive',
             'lang_example':'Example',
             'lang_borderStyle':'Table Border',
@@ -481,7 +556,8 @@ UE.I18N['en'] = {
         },
         captionName:'Caption',
         titleName:'Title',
-        cellsName:'text'
+        cellsName:'text',
+        errorMsg:'There are merged cells, can not sort.'
     },
     'edittip':{
         'static':{
@@ -492,6 +568,10 @@ UE.I18N['en'] = {
     'edittd':{
         'static':{
             lang_tdBkColor:'Background Color:'
+        }
+    },
+    'formula':{
+        'static':{
         }
     },
     wordimage:{
